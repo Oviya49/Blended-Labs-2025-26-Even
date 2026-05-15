@@ -72,6 +72,7 @@ This lab provided hands-on experience with AWS IAM by demonstrating how organiza
 
 
 ## Author
-**Name:** Oviya N **Reg No:** 212223040140
+**Name:** Oviya N 
+**Reg No:** 212223040140
 **Course:** Introduction to Cloud Computing  
 
