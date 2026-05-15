@@ -4,7 +4,6 @@
 
 * **Name**: OVIYA N
 * **Register Number**: 212223040140
-
 ---
 
 ## Objective
@@ -84,35 +83,43 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ## Workflow (Student Explanation)
 
-1. A Virtual Private Cloud (VPC) was designed and created with the CIDR block 10.0.0.0/16 to establish a secure and isolated network environment within AWS.  
-2. A public subnet was configured within the VPC with the CIDR range 10.0.1.0/24, and auto-assign public IPv4 addresses was enabled to allow internet connectivity for instances.  
-3. An Internet Gateway was created and attached to the VPC, followed by the setup of a route table with a default route (0.0.0.0/0) pointing to the gateway, and the route table was associated with the public subnet.  
-4. A security group was established to permit inbound SSH (port 22) and HTTP (port 80) traffic, and an EC2 instance was launched using the Amazon Linux 2 AMI, associated with the security group and a key pair.  
-5. The Apache HTTPD web server was installed and started on the EC2 instance, a simple HTML webpage was created, and its accessibility was verified through the public IP address of the instance via a web browser.
+# Step-1:
+I started the lab and logged into the Amazon Web Services Management Console in the N. Virginia (us-east-1) region.
 
----
+# Step-2:
+I created a custom VPC using Amazon VPC, configured public and private subnets, and enabled an Internet Gateway and NAT Gateway to manage internet connectivity.
+
+# Step-3:
+I added additional public and private subnets in a second Availability Zone and updated the route tables to ensure proper routing for both internet-facing and private traffic.
+
+# Step-4:
+I created a Security Group named Web Security Group and configured it to allow HTTP (port 80) access from anywhere to enable web traffic.
+
+# Step-5:
+I launched an EC2 instance using Amazon EC2 in the public subnet, enabled auto-assign public IP, attached the security group, and selected the required key pair.
+
+# Step-6:
+I configured a user data script to automatically install Apache and deploy a web application, then verified the web server by accessing the instance’s public DNS in a browser.
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: VPC and Subnet Details
 
-<img width="1920" height="1200" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/e58109bd-d875-4c35-b23c-151a82b70cbb" />
-
+<img width="1598" height="696" alt="image" src="https://github.com/user-attachments/assets/36bee0cd-0bb7-4fc8-a8ba-5dd08f16a985" />
 
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-<img width="1920" height="1200" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/c044ced7-eed6-4eda-9daf-e2db57ab4c9f" />
-
+<img width="1595" height="711" alt="image" src="https://github.com/user-attachments/assets/fb0e1a93-58bd-463e-904f-4829c1de5d26" />
 
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-<img width="1920" height="1200" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/3d65d3bc-aa50-4a41-b414-5c395ab1eef8" />
+<img width="1600" height="809" alt="image" src="https://github.com/user-attachments/assets/f0fa2eef-f9e2-46c0-a73a-043c4c44931a" />
 
 
 ---
