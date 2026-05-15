@@ -107,7 +107,7 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ### Screenshot 3: Sample Database and Table
 
-<img width="1910" height="1133" alt="Screenshot 2026-03-01 105153" src="https://github.com/user-attachments/assets/a6917d75-af8c-4dd8-bf5f-45b03f311162" />
+<img width="1458" height="691" alt="image" src="https://github.com/user-attachments/assets/ab70128c-a643-4692-b446-e4baad3302f3" />
 
 ---
 
